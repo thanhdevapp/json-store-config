@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
@@ -8,7 +9,8 @@ const _ = require('lodash');
 const setupSwagger = require("./swagger"); // Thêm lodash
 
 const app = express();
-const PORT = 3000;
+const PORT = process.argv[2] || 3000;
+
 const dataFolder = './data';
 
 app.use(cors())

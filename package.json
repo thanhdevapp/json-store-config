@@ -1,10 +1,14 @@
 {
   "name": "json-store-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Store configuration json",
   "main": "server.js",
+  "bin": {
+    "json-store-config": "./server.js"
+  },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "publish": "npm pack && npm publish"
   },
   "keywords": ["json", "config", "store"],
   "author": "thanhdevapp",
