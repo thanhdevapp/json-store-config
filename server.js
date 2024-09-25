@@ -23,7 +23,7 @@ if (!fs.existsSync(dataFolder)) {
 }
 
 // Thiết lập Swagger
-setupSwagger(app);
+setupSwagger(app, PORT);
 
 
 // Hàm để tạo versionId theo định dạng yyyymmddhhmmss
