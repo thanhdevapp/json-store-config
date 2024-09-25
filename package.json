@@ -1,6 +1,6 @@
 {
   "name": "json-store-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Store configuration json",
   "main": "server.js",
   "bin": {
@@ -10,7 +10,11 @@
     "start": "nodemon server.js",
     "publish": "npm pack && npm publish"
   },
-  "keywords": ["json", "config", "store"],
+  "keywords": [
+    "json",
+    "config",
+    "store"
+  ],
   "author": "thanhdevapp",
   "license": "MIT",
   "dependencies": {
@@ -19,7 +23,8 @@
     "fs": "0.0.1-security",
     "lodash": "^4.17.21",
     "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "yargs": "^17.7.2"
   },
   "repository": {
     "type": "git",

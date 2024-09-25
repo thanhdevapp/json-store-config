@@ -6,12 +6,29 @@ const path = require('path');
 const swaggerUi = require('swagger-ui-express');
 const swaggerJsdoc = require('swagger-jsdoc');
 const _ = require('lodash');
+const yargs = require('yargs'); // Import yargs for argument parsing
 const setupSwagger = require("./swagger"); // Thêm lodash
 
 const app = express();
-const PORT = process.argv[2] || 3000;
+// Use yargs to parse command-line arguments
+const argv = yargs
+  .option('port', {
+    alias: 'p',
+    type: 'number',
+    default: 3000, // Default port
+    description: 'Port to run the server on'
+  })
+  .option('data-path', {
+    alias: 'd',
+    type: 'string',
+    default: './data', // Default data path
+    description: 'Path to the data folder'
+  })
+  .help()
+  .argv;
 
-const dataFolder = './data';
+const PORT = argv.port;
+const dataFolder = argv.dataPath;
 
 app.use(cors())
 // Middleware để parse JSON từ request
