@@ -1,0 +1,24 @@
+{
+  "name": "json-store-config",
+  "version": "1.0.0",
+  "description": "Store configuration json",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": ["json", "config", "store"],
+  "author": "thanhdevapp",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.21",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thanhdevapp/json-store-config.git"
+  }
+}
